@@ -1,0 +1,38 @@
+.field-wrapper {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+}
+
+.grid-size-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+  
+.field {
+    --field-size: 5;
+    display: grid;
+    width: 25rem;
+    height: 25rem;
+    grid-template: repeat(var(--field-size), 1fr) / repeat(var(--field-size), 1fr);
+}
+
+.square {
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+}
+
+.square:hover {
+    background: #00a9f4;
+}
+
+.start-button {
+    outline: none;
+    margin-left: 20px;
+}
